@@ -1,0 +1,124 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Fonts/Press_Start_2P/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://MainMenu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 1 )
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -288.0
+margin_top = -232.249
+margin_right = 288.0
+margin_bottom = -208.249
+rect_rotation = 5.0
+custom_fonts/font = SubResource( 1 )
+text = "graffiti removal service"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Started" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -444.0
+margin_top = -120.0
+margin_right = 444.0
+margin_bottom = 120.0
+custom_fonts/font = SubResource( 1 )
+text = "Oh my! The great and awesome
+Latvian president Levits is
+visiting our country! The government
+has deduced 60000000 Euros to clean
+up all the graffiti! You're the man 
+for the job! You'll get paid 300 EUR!
+Or be put into the jail for not doing
+you duty! Clean up all the graffiti
+before president Levits arrives!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lose" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -444.0
+margin_top = -133.5
+margin_right = 444.0
+margin_bottom = 133.5
+custom_fonts/font = SubResource( 1 )
+text = "Oh no! You didn't clean all the
+graffiti in time!
+Because of you the
+Latvians now think that your
+town is a joke!
+You have been sentenced to 
+25 years in prison!
+Your daily meal is raw potato with
+brown water!
+I hope you are proud of yourself!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Win" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -444.0
+margin_top = -120.0
+margin_right = 444.0
+margin_bottom = 120.0
+custom_fonts/font = SubResource( 1 )
+text = "You did great! The president 
+of the great Latvian nation
+is so proud of your town, that
+he named it his favorite!
+You have been awarded 300 EUR!
+Good Job!
+Don't drink it in one day!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -78.0
+margin_top = -107.421
+margin_right = 78.0
+margin_bottom = -77.4207
+custom_fonts/font = SubResource( 1 )
+text = "Start!"
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
