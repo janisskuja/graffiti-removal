@@ -1,5 +1,5 @@
 # graffiti-removal
-TriJam game, made in 4.5h, theme: Remove It!
+TriJam game, made in 4.5h, theme: Remove It! Play it here: https://jdzsk.itch.io/graffiti-removal-service
 
 # Story:
 
